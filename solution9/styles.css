@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainImage {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.wrapper {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ShareIconContainer {
+    cursor: pointer;
+}
+
+.wrapperRight {
+    max-width: 365px;
+    margin: 32px 40px;
+}
+
+.authorWrapper {
+    display: flex;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.wrapperMainText {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #48556A;
+}
+
+.wrapperSubText,
+.wrapperMainText {
+    margin-bottom: 16px;
+}
+
+.wrapperSubText {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: #6E8098;
+}
+
+.authorName {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: #48556A;
+}
+
+.postDate {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #9DAEC2;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+
+.authorImage {
+    border-radius: 9999px;
+}
+
+
+.ShareIconContainer {
+    background-color: #ECF2F8;
+    border-radius: 9999px;
+    margin: auto 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shareContainer {
+    width: 248px;
+    height: 55px;
+    position: absolute;
+    right: -64px;
+    bottom: 88px;
+    background-color: #48556A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+}
+
+.shareText {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    color: #9DAEC2;
+}
+
+.triangle {
+    position: absolute;
+    right: 44px;
+    bottom: 76px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 12px 12px 0 12px;
+    border-color: #48556A transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.iconFacebook {
+    transition: transform 0.3s;
+}
+
+.iconFacebook:hover {
+    transform: scale(1.3);
+}
+
+.iconPinterest {
+    transition: transform 0.3s;
+}
+
+.iconPinterest:hover {
+    transform: scale(1.3);
+}
+
+.iconTwitter {
+    transition: transform 0.3s;
+}
+
+.iconTwitter:hover {
+    transform: scale(1.3);
+}
+
+.mobileMainImage {
+    display: none;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.shareIconMobile{
+    display: none;
+}
+
+.shareContainerMobile{
+    margin-left: auto;
+}
+
+@media (min-width: 889.98px) {
+    .shareContainerMobile{
+        display: none;
+    }
+}
+
+@media (max-width: 889.98px) {
+    .wrapper {
+        flex-direction: column;
+        margin: 0 16px;
+    }
+
+    .mobileMainImage {
+        display: block;
+        width: 100%;
+        height: auto !important;
+    }
+
+    .mainImage {
+        display: none;
+    }
+
+    .wrapperRight {
+        max-width: 263px;
+        margin: 36px 32px 11px 32px;
+    }
+
+    .shareContainer {
+        padding: 0 32px 6px 32px;
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+        -webkit-border-radius: 10x;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius: 0px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .triangle {
+        opacity: 0;
+    }
+
+    .shareIconMobile {
+        display: block;
+    }
+}
+
+@media (max-height: 543.98px) {
+    body{
+        height: auto;
+    }
+    .wrapper{
+        margin: 16px;
+    }
+}
